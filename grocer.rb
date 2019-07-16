@@ -29,11 +29,10 @@ def apply_coupons(cart, coupons)
       if new_cart[food][:count] == 0
         new_cart.delete(food)
       end  
-
       new_cart.merge!(temp)
-      
     end
  }
+ new_cart
 end
 
 def apply_clearance(cart)
