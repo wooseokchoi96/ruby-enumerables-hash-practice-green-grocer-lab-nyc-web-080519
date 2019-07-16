@@ -4,7 +4,7 @@ def consolidate_cart(cart)
   cart.each{|key| count(key) += 1}
   
 #Delete duplicate key values 
-  new_cart = cart.uniq{|item| cart
+  new_cart = cart.uniq{|item| cart[:item]
 
 end
 
