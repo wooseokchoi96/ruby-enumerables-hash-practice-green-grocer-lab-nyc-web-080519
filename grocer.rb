@@ -4,8 +4,9 @@ def consolidate_cart(cart)
   cart.each{|key| 
     count(key) += 1
   }
+  
 #Delete duplicate key values 
-
+  
 
 end
 
