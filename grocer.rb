@@ -18,9 +18,12 @@ def apply_coupons(cart, coupons)
     food = coupon_hash[:item]
     if !new_cart[food].nil? && new_cart[food][:count] >= coupon_hash[:num]
       temp = {"#{food} W/COUPON" => {
-        
+        price: coupon_hash[:cost] / coupon_hash[:num],
+        clearance: new_cart[:food][:clearance]
+        count: 1
         }
       }
+      
  }
 end
 
