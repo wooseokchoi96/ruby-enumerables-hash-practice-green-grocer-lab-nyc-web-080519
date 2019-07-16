@@ -27,11 +27,11 @@ def apply_coupons(cart, coupons)
       temp["#{food} W/COUPON"][:count] += counter
       new_cart[food][:count] -= counter
       
-      =begin
+=begin
       if new_cart[food][:count] == 0
         new_cart.delete(food)
       end  
-      =end
+=end
       
       new_cart.merge!(temp)
     end
