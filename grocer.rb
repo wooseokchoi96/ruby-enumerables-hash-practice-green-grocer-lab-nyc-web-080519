@@ -23,6 +23,7 @@ def apply_coupons(cart, coupons)
         count: 0
         }
       }
+      counter = 
       new_cart.merge!(temp)
       
     end
