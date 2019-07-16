@@ -23,8 +23,10 @@ def apply_coupons(cart, coupons)
         count: 0
         }
       }
+      new_cart.merge!(temp)
     end
     if !temp.nil?
+      
       
     end
       
