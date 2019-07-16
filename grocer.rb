@@ -43,7 +43,7 @@ def apply_clearance(cart)
   cart.each{|food|
     food.each{|detail_hash|
       if detail_hash[:clearance]
-        detail_hash[:price] *= 0.8
+        detail_hash[:price] = (detail_hash[:price] * 0.8)
       end
     }
   }
