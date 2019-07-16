@@ -7,7 +7,7 @@ def consolidate_cart(cart)
   new_cart = cart.uniq
 
 #Add count to each unique key in new_cart
-  new_cart.each{|item| item[:count] = 
+  new_cart.each{|item| item[:count] = count_array.find{|key| key == item}
 end
 
 def apply_coupons(cart, coupons)
