@@ -1,5 +1,5 @@
 def consolidate_cart(cart)
-  count = hash.new(0)
+  count = Hash.new(0)
   
 end
 
