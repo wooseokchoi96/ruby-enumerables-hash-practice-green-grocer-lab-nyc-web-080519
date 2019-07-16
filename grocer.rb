@@ -1,7 +1,7 @@
 def consolidate_cart(cart)
 #Count occurences of each key
   count = Hash.new(0)
-  cart.each{|key,value| 
+  cart.each{|key| 
     count(key) += 1
   }
   
