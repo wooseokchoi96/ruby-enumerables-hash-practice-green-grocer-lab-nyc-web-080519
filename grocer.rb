@@ -56,5 +56,6 @@ def checkout(cart, coupons)
   my_final_cart.each{|item, detail_hash|
     final_price += detail_hash[:price] * detail_hash[:count]
   }
-  if final_price >
+  if final_price > 100 
+    final_price
 end
