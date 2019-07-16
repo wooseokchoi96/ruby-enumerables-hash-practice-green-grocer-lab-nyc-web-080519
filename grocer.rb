@@ -1,6 +1,6 @@
 def consolidate_cart(cart)
   count = Hash.new(0)
-  
+  cart.each{|key,value| key.
 end
 
 def apply_coupons(cart, coupons)
