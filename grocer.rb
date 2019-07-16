@@ -23,7 +23,7 @@ def apply_coupons(cart, coupons)
         count: 0
         }
       }
-      counter = (new_cart[food][:count] / coupon_hash[:num]).floor
+      counter = (new_cart[food][:count] / coupon_hash[:num]).floor * coupon_hash[:num]
       temp["#{food} W/COUPON"][:count] += counter
       new_cart[food][:count] -= counter
       if new_cart[food][:count] == 0
