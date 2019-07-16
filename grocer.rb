@@ -13,9 +13,11 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
- coupons.each{|coupon_hash|
-   food = coupon_hash[:item]
-   if cart[food]
+  new_cart = cart
+  coupons.each{|coupon_hash|
+    food = coupon_hash[:item]
+    if !new_cart[food].nil? && new_cart[food][:count] >= coupon_hash[:num]
+      
  }
 end
 
