@@ -26,7 +26,10 @@ def apply_coupons(cart, coupons)
       counter = (new_cart[food][:count] / coupon_hash[:num]).floor
       temp["#{food} W/COUPON"][:count] += counter
       new_cart[food][:count] -+ counter
-      if 
+      if new_cart[food][:count] == 0
+        new_
+      end  
+
       new_cart.merge!(temp)
       
     end
