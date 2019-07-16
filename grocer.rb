@@ -57,5 +57,6 @@ def checkout(cart, coupons)
     final_price += detail_hash[:price] * detail_hash[:count]
   }
   if final_price > 100 
-    final_price
+    final_price = (final_price * 0.9).round(2)
+  end
 end
