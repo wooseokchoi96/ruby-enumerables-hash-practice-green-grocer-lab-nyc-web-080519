@@ -53,5 +53,7 @@ def checkout(cart, coupons)
   my_final_cart = apply_coupons(my_final_cart,coupons)
   my_final_cart = apply_clearance(my_final_cart)
   final_price = 0
-  
+  my_final_cart.each{
+    
+  }
 end
