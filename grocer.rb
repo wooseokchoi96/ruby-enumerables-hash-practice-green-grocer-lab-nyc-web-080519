@@ -1,12 +1,10 @@
 def consolidate_cart(cart)
 #Count occurences of each key
   count = Hash.new(0)
-  cart.each{|key| 
-    count(key) += 1
-  }
+  cart.each{|key| count(key) += 1}
   
 #Delete duplicate key values 
-  new_cart = cart.uniq{
+  new_cart = cart.uniq{|item| cart
 
 end
 
