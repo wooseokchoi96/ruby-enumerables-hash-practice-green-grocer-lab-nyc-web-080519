@@ -23,16 +23,10 @@ def apply_coupons(cart, coupons)
         count: 0
         }
       }
-      counter = 
+      counter = floor(new_cart[food][:count]
       new_cart.merge!(temp)
       
     end
-    
-      
-      
-    end
-      
-      
  }
 end
 
