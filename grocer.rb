@@ -23,7 +23,10 @@ def apply_coupons(cart, coupons)
         count: 0
         }
       }
+    end
     if !temp.nil?
+      
+    end
       
       
  }
