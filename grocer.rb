@@ -17,7 +17,10 @@ def apply_coupons(cart, coupons)
   coupons.each{|coupon_hash|
     food = coupon_hash[:item]
     if !new_cart[food].nil? && new_cart[food][:count] >= coupon_hash[:num]
-      
+      temp = {"#{food} W/COUPON" => {
+        
+        }
+      }
  }
 end
 
