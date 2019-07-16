@@ -6,7 +6,7 @@ def consolidate_cart(cart)
   }
   
 #Delete duplicate key values 
-  
+  new_cart = cart.uniq{
 
 end
 
