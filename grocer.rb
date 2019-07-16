@@ -4,8 +4,10 @@ def consolidate_cart(cart)
   cart.each{|key| count(key) += 1}
   
 #Delete duplicate key values 
-  new_cart = cart.uniq{|item| cart[:item]
+  new_cart = cart.uniq
 
+#Add count to each unique key in new_cart
+  new_cart.map{|item| item[:count] = 
 end
 
 def apply_coupons(cart, coupons)
